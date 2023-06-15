@@ -1,2 +1,3 @@
 #!/bin/bash
+# compiles a C file that doesn't link and redirects output
 gcc -c $CFILE -o main.o
