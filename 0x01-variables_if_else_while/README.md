@@ -7,4 +7,13 @@ title: Variables, if, else, while
 
 This should answer what the challenge of each script was in detail:
 
- **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
+ * **** -
