@@ -18,7 +18,7 @@ int main(void)
 			/* + '0' - converts vhar to int */
 			putchar(c + '0');
 		}
-		/* once if statement is reached loop changes to letters from a-f befor 16 chars reached */
+		/* prints a-z after 10 and below 16 characters */
 		else
 		{
 			putchar(c - 10 + 'a');
