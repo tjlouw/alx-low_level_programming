@@ -11,7 +11,7 @@ int main(void)
 	char lower = 'a';
 	char upper = 'A';
 
-	/* while loop: looping from a-z for both lower and upper case */
+	/* while loop: looping from a-z and A-Z for both lower and upper case */
 	while (lower <= 'z')
 	{
 		putchar(lower);
