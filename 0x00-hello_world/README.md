@@ -7,6 +7,21 @@ title: C-Hello, World
 
 This should answer what the challenge of each script was in detail:
 
+The C file 'main.c' will be saved in the variable $CFILE containing the following,
+``` 
+    #include <stdio.h>
+
+    /**
+     * main - Entry point
+     *
+     * Return: Always 0 (Success)
+     */
+     int main(void)
+    {
+         return (0);
+    }
+```
+
 * **0-preprocessor** - Write a script that runs a C file through the preprocessor and save the result into another file.
 * **1-compiler** - Write a script that compiles a C file but does not link.
 * **2-assembler** - Write a script that generates the assembly code of a C code and save it in an output file.
