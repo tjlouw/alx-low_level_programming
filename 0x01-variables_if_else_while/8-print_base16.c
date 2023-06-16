@@ -28,3 +28,4 @@ int main(void)
 	/* ends loop with newline */
 	putchar('\n');
 	return (0);
+}
