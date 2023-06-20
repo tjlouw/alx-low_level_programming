@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -17,10 +19,14 @@ int main(void)
 	 */
 	while (c[i] != '\0')
 	{
-		putchar(c[i]);
+		_putchar(c[i]);
 		i++;
 	}
 	/* outputs a newline at the end of loop */
-	putchar('\n');
+	_putchar('\n');
 	return (0);
+}
+int _putchar(char c)
+{
+	return(write(1, &c, 1));
 }
