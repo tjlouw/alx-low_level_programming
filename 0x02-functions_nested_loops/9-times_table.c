@@ -18,6 +18,10 @@ void times_table(void)
 		{
 			if (c * d <= 9)
 			{
+				if (d != 0)
+				{
+					_putchar(' ');
+				}
 				_putchar(c * d + '0');
 			}
 			else
