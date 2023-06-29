@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_triangle -
- * @size:
+ * print_triangle - prints triangle
+ * @size: default value
  */
 void print_triangle(int size)
 {
