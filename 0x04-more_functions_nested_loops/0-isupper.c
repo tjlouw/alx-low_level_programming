@@ -2,6 +2,7 @@
 
 /**
  * _isupper - checks for uppercase character.
+ * @c: default character
  *
  * Return: 1 if true, otherwise 0
  */
