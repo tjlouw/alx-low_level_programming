@@ -8,7 +8,7 @@
  * @argc: argument count
  * @argv: argument vector
  *
- * Return: 
+ * Return: 0 if success, otherwise 1 if value not digit
  */
 int main(int argc, char *argv[])
 {
