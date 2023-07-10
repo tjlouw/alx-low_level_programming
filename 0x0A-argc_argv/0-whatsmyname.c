@@ -2,9 +2,11 @@
 #include "main.h"
 
 /**
+ * main - program prints its own name
+ * @argc: argument count
+ * @argv: argument vector
  *
- *
- *
+ * Return: Always 0 (success)
  */
 int main(int argc, char *argv[])
 {
