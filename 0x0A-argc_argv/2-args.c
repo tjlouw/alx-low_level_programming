@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 
-/***
+/**
  * main - prints all arguments it recieves
  * @argc: argument count
- * @argc: argument vector
+ * @argv: argument vector
  *
  * Return: Always 0 (success)
  */
