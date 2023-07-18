@@ -14,6 +14,9 @@ struct dog
 	char *owner;
 };
 
+/* define new type dog_t as new name for type struct dog */
+typedef struct dog dog_t;
+
 /* function prototype */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
