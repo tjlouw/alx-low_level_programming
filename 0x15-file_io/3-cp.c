@@ -36,7 +36,7 @@ void open_files(char *argv[], int *file_from, int *file_to)
 	}
 
 	/* set unmask to allow write permissions for group */
-	old_mask = umask(0022);
+	old_mask = umask(0002);
 
 	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	*file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
