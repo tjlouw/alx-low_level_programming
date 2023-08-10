@@ -26,7 +26,7 @@ void check_args(int argc)
  */
 void open_files(char *argv[], int *file_from, int *file_to)
 {
-	mode_t mode;
+	mode_t mode, old_mask;
 
 	*file_from = open(argv[1], O_RDONLY);
 	if (*file_from == -1)
@@ -34,6 +34,9 @@ void open_files(char *argv[], int *file_from, int *file_to)
 		dprintf(STDERR_FILENO, READ_ERROR, argv[1]);
 		exit(98);
 	}
+
+	/* set unmask to allow write permissions for group */
+	old_mask = umask(0022);
 
 	mode = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
 	*file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, mode);
@@ -43,6 +46,8 @@ void open_files(char *argv[], int *file_from, int *file_to)
 		close(*file_from);
 		exit(99);
 	}
+	/* restore the original umnask value */
+	umask(old_mask);
 }
 
 /**
