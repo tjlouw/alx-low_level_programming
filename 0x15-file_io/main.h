@@ -1,6 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* header files */
+#include <stddef.h>
+#include <stdlib.h>
+
 /* function prototypes */
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
